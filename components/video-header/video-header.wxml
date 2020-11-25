@@ -1,0 +1,6 @@
+<!-- components/video-header/video-header.wxml -->
+<view class="nav-header">
+  <image class="left" src="/static/images/logo.png"></image>
+  <view class="center" bind:tap="toSearch">{{title}}</view>
+  <image class="right" src="/static/images/logo.png"></image>
+</view>

@@ -1,0 +1,90 @@
+/**index.wxss**/
+
+.navContainer {
+  display: flex;
+  margin: 10rpx 0;
+}
+
+.swiper-item .swiper-image {
+  width: 100%;
+}
+
+/* 每一个导航的样式 */
+.navItem {
+  display: flex;
+  flex: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+/* 导航栏小圆圈样式 */
+.navItem .iconfont {
+  margin: 20rpx 0;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #d43c33;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  color: #ffffff;
+}
+/*导航下面的文字提示样式*/
+.navItem .text {
+  font-size: 26rpx;
+}
+
+.recommend-content {
+  padding: 0 15rpx;
+}
+
+.scroll-container {
+  display: flex;
+  height: 300rpx;
+}
+.scroll-container .scroll-item {
+  margin: 0 10rpx;
+  width: 200rpx;
+}
+.scroll-container .scroll-item .scroll-item-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scroll-container .scroll-item .scroll-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 20rpx;
+}
+
+/* 排行榜轮播图 */
+
+.top-list-swiper {
+  padding: 0 15rpx;
+  height: 350rpx;
+  font-size: 30rpx;
+  background: #ccc;
+}
+
+.top-list-swiper-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.top-list-swiper-item .count {
+  margin-left: 50rpx;
+}
+.top-list-swiper-item .singName {
+  margin-left: 50rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 300rpx;
+  white-space: nowrap;
+}
+.top-list-swiper-item .img {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 5rpx 0;
+  border-radius: 15rpx;
+}

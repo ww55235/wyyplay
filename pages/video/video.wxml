@@ -1,0 +1,21 @@
+<view class="container">
+  <video-header title='搜索音乐' bind:toSearchPage="toSearchPage" />
+  <scroll-view scroll-into-view="{{'scroll'+ navId}}" scroll-with-animation enable-flex class="video-scroll-nav" scroll-x>
+    <view id="{{'scroll'+ item.id}}" class="navItem" bind:tap="navHandle" data-navid='{{item.id}}' wx:for="{{videoNavList}}" wx:key="id">
+      <text class="navItemText {{navId === item.id ? 'actived':''}}">{{item.name}}</text>
+    </view>
+  </scroll-view>
+  <scroll-view bindrefresherrefresh="refresherrefresh" refresher-enabled bindscrolltolower="hanldeToLower" refresher-triggered="{{isTriggered}}" class="v-scroll" scroll-y>
+    <view class="v-scroll-item" wx:for="{{videoList}}" wx:key="id">
+      <video src="{{item.data.urlInfo.url}}" bindended="handleEnded" bindtimeupdate="updateTime" object-fit="fill" poster="{{item.data.coverUrl}}" wx:if="{{videoId === item.data.vid}}" class="common" id="{{item.data.vid}}" bindplay="videoPlay" />
+      <image bind:tap="videoPlay" id="{{item.data.vid}}" wx:else class="common" src="{{item.data.coverUrl}}"></image>
+      <view class="desc">
+        <view class="title">{{item.data.title}}</view>
+        <view class="bottom">
+          <view class="left"></view>
+          <view class="right"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

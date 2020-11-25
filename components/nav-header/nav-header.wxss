@@ -1,0 +1,21 @@
+.nav-header {
+  margin-bottom: 30rpx;
+}
+
+.nav-header .top {
+  margin: 10rpx 0;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.nav-header .recommend {
+  font-size: 35rpx;
+}
+
+.nav-header .more {
+  float: right;
+  padding: 15rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #cccccc;
+  font-size: 24rpx;
+}

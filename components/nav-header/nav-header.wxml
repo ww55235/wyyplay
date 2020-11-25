@@ -1,0 +1,5 @@
+<view class="nav-header">
+  <view class="top">{{title}}</view>
+  <text class="recommend">{{leftTitle}}</text>
+  <text class="more">{{rightTitle}}</text>
+</view>

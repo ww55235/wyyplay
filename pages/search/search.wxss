@@ -1,0 +1,123 @@
+/* pages/search/search.wxss */
+
+.search {
+  padding: 0 20rpx;
+}
+.header {
+  padding-top: 10rpx;
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  /* border: 1rpx solid green; */
+}
+.header .searchContent {
+  position: relative;
+  flex: 1;
+}
+.searchContent .clear {
+  position: absolute;
+  right: 16rpx;
+  top: 0;
+  font-size: 20rpx;
+  z-index: 5;
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 10rpx;
+}
+.header .searchContent input {
+  padding-left: 42rpx;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #eeeeee;
+}
+.input-placeholder {
+  font-size: 24rpx;
+  margin-left: 50rpx;
+}
+
+.header .cancel {
+  padding: 0 10rpx;
+  width: 80rpx;
+  height: 60rpx;
+  /* background-color: red; */
+}
+
+.content {
+  margin-top: 20rpx;
+}
+.content .title {
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.content .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .container .navItem {
+  margin: 20rpx 0;
+  width: 50%;
+}
+.content .container .navItem .count {
+  margin-right: 10rpx;
+}
+.content .container .navItem .songName {
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30rpx;
+}
+
+.content .container .navItem .iconImg {
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.hotSearchContent .title {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+
+.hotSearchContent .item {
+  height: 50rpx;
+  line-height: 50rpx;
+  display: flex;
+  margin: 10rpx 0;
+}
+.hotSearchContent .item .name {
+  margin-left: 30rpx;
+  flex: 1;
+}
+
+.searchHistory {
+  position: relative;
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchHistory .search-item {
+  padding: 10rpx 20rpx;
+  margin: 10rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  background: #cccccc;
+  border-radius: 20%;
+}
+
+.delete {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

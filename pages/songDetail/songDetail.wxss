@@ -1,0 +1,122 @@
+/* pages/songDetail/songDetail.wxss */
+
+.songDetail {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+.songDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.songDetail .cipan {
+  position: relative;
+  width: 600rpx;
+  height: 600rpx;
+}
+.songDetail .yaogan image {
+  width: 270rpx;
+  height: 270rpx;
+}
+.songDetail .yaogan {
+  position: relative;
+  left: 60rpx;
+  top: 150rpx;
+  z-index: 50;
+  transform-origin: 40rpx 0;
+  transform: rotate(-10deg);
+  transition: all 1s;
+}
+.isPlay {
+  transform: rotate(0deg) !important;
+}
+.songDetail .cipan image {
+  width: 600rpx;
+  height: 600rpx;
+}
+.songDetail .cipan .songerImg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 364rpx;
+  height: 364rpx;
+  border-radius: 50%;
+}
+
+.isAnimate {
+  animation: anima 4s linear 1s infinite;
+}
+
+@keyframes anima {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bottom-icon {
+  position: absolute;
+  bottom: 80rpx;
+  width: 100%;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 10rpx 0;
+  border-top: 2rpx solid #ffffff;
+}
+
+.bottom-icon text {
+  width: 20%;
+  text-align: center;
+  font-size: 50rpx;
+  color: #ffffff;
+}
+.bottom-icon text.big {
+  font-size: 60rpx;
+}
+
+.songDetail .songAuthor {
+  margin-top: 20rpx;
+  color: #ffffff;
+}
+.progressControll {
+  margin-top: 20rpx;
+  display: flex;
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* border: 2rpx solid red; */
+}
+
+.progressControll .progress-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  width: 450rpx;
+  height: 4rpx;
+  margin: auto 10rpx;
+}
+
+.progressControll .progress-container .progress {
+  height: 4rpx;
+}
+.progressControll .progress-container .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4rpx;
+  background: red;
+}
+.progress-bar .cirecle {
+  position: absolute;
+  right: -20rpx;
+  top: -8rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background: #ffffff;
+  border-radius: 50%;
+}

@@ -1,0 +1,29 @@
+<!-- pages/songDetail/songDetail.wxml -->
+<view class="songDetail">
+  <view class="songAuthor">{{song.ar[0].name}}</view>
+  <view class="yaogan {{isPlay && 'isPlay'}}">
+    <image src="/static/images/song/needle.png"></image>
+  </view>
+  <view class="cipan {{isPlay && 'isAnimate'}}">
+    <image src="/static/images/song/disc.png"></image>
+    <image class="songerImg" src="{{song.al.picUrl}}"></image>
+  </view>
+  <view class="progressControll">
+    <view class="currentTime">{{currentTime}}</view>
+    <view class="progress-container">
+      <view class="progress">
+        <view class="progress-bar" style="width:{{currentWidth + 'rpx'}}">
+          <view class="cirecle"></view>
+        </view>
+      </view>
+    </view>
+    <view class="durationTime">{{durationTime}}</view>
+  </view>
+  <view class="bottom-icon">
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiAlrepeatOne"></text>
+    <text class="iconfont icon-shangyishou" id="pre" bind:tap="handleSwitch"></text>
+    <text class="iconfont big {{isPlay ? 'icon-zanting' : 'icon-bofang'}} " bind:tap="handleMusicPlay"></text>
+    <text class="iconfont icon-next" id="next" bind:tap="handleSwitch"></text>
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+  </view>
+</view>

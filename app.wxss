@@ -1,0 +1,15 @@
+/**app.wxss**/
+/* 引入字体图标样式文件 */
+@import '/static/iconfont/iconfont.wxss';
+
+page {
+  height: 100%;
+}
+
+image {
+  vertical-align: middle;
+}
+
+video {
+  vertical-align: middle;
+}
